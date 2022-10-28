@@ -1,0 +1,124 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital@1&family=Roboto+Condensed&display=swap');
+
+body{
+    background-color: antiquewhite;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+nav{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 65px;
+    background-color: black;
+    color: white;
+}
+nav ul li{
+    padding: 0 12px;
+    color: white;
+}
+nav ul a{
+  text-decoration: none;  
+}
+.brand img{
+    width: 44px;
+    padding:0 8px;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font: 1.3rem;
+}
+.container{
+    min-height: 56vh;
+    background-color: black;
+    color: white;
+    font-family: 'Noto Sans', sans-serif;
+    display: flex;
+    margin:23px auto;
+    width: 70%;
+    border-radius: 12px;
+    padding: 34px;
+    background-image: url('bg.jpg');
+    background-position: center;
+    
+}
+
+.bottom{
+    display: flex;
+    height: 92px;
+    bottom: 0;
+    position: sticky;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    
+}
+#myProgressBar{
+    width: 80vw;
+    cursor: pointer;
+}
+.icons{
+    margin: 10px;
+}
+.icons i{
+    cursor: pointer;
+}
+.songItemContainer{
+    margin-top: 35px;
+}
+.songItem{
+    height: 50px;
+    display: flex;
+    background-color: white;
+    color: black;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+  
+    
+}
+.songItem img{
+    width: 30px;
+    margin: 0 23px;
+    border-radius: 20px;
+
+}
+.songInfo{
+    position: absolute;
+    left: 10vw;
+    font-family: 'Noto Sans', sans-serif;
+
+}
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.3s  ease-in;
+}
+.timeStamp{
+    margin: 0 23px;
+    
+}
+.timeStamp i{
+    cursor: pointer;
+}
+
+/* playList page css */
+
+.container button:hover {
+    background-color: #3e8e41;
+    color: white;
+  }
